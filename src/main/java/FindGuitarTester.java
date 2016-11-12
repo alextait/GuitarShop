@@ -6,6 +6,7 @@ public class FindGuitarTester {
   public static void main(String[] args) {
     // Set up Rick's guitar inventory
     Inventory inventory = new Inventory();
+    //Create manual guitar data
     initializeInventory(inventory);
 
     Guitar whatErinLikes = new Guitar("", 0, Builder.FENDER, "Stratocastor", 

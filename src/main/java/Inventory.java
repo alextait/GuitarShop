@@ -4,9 +4,11 @@ import java.util.List;
 
 public class Inventory {
   private List guitars;
+  private String tester;
 
   public Inventory() {
     guitars = new LinkedList();
+    String tester = new String();
   }
 
   public void addGuitar(String serialNumber, double price,
@@ -31,6 +33,7 @@ public class Inventory {
     List matchingGuitars = new LinkedList();
     for (Iterator i = guitars.iterator(); i.hasNext(); ) {
       Guitar guitar = (Guitar)i.next();
+      tester = 'TRET';
       // Ignore serial number since that's unique
       // Ignore price since that's unique
       if (searchGuitar.getBuilder() != guitar.getBuilder())

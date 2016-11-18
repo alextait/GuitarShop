@@ -29,6 +29,20 @@ public class Inventory {
     return null;
   }
 
+
+  public List search (Guitar searchGuitar){
+      List matchingGuitars = new LinkedList();
+
+      guitars.forEach(Guitar -> System.out.println(Guitar.getModel()));
+
+
+      //guitars.forEach(guitar -> System.out.println(guitar));
+      return matchingGuitars;
+  }
+
+
+/*
+
   public List search(Guitar searchGuitar) {
     List matchingGuitars = new LinkedList();
     for (Iterator i = guitars.iterator(); i.hasNext(); ) {
@@ -52,4 +66,5 @@ public class Inventory {
     }
     return matchingGuitars;
   }
+  */
 }

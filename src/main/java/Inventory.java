@@ -3,12 +3,11 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Inventory {
-  private List guitars;
+  private LinkedList<Guitar> guitars = new LinkedList<Guitar>();
   private String tester;
 
   public Inventory() {
-    guitars = new LinkedList();
-    String tester = new String();
+
   }
 
   public void addGuitar(String serialNumber, double price,
